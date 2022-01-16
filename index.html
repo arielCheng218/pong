@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script src="utils.js"></script>
+    <script src="./classes/Ball.js"></script>
+    <script src="./classes/Paddle.js"></script>
+    <script src="sketch.js"></script>
+    <title>Pong</title>
+  </head>
+  <body>
+    <h1 class="start">Pong</h1>
+    <h3 class="start">press ENTER to play</h3>
+    <h4 class="run">level 0</h4>
+    <style>
+      body {
+        margin: 0;
+      }
+      @font-face {
+        font-family: "pixel";
+        src: url("assets/PublicPixel-0W6DP.ttf");
+      }
+      h1 {
+        font-family: "pixel";
+        position: absolute;
+        color: #ffffff;
+        font-size: 48px;
+        width: 100%;
+        text-align: center;
+        top: 20px;
+      }
+      h3 {
+        font-family: "pixel";
+        position: absolute;
+        text-align: center;
+        color: #ffffff;
+        font-size: 14px;
+        width: 100%;
+        top: 140px;
+      }
+      h4 {
+        font-family: "pixel";
+        position: absolute;
+        color: #ffffff;
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+        top: 20px;
+        display: none;
+      }
+    </style>
+    <script>
+      window.onkeyup = function (e) {
+        return !(e.keyCode == 32);
+      };
+    </script>
+  </body>
+</html>
